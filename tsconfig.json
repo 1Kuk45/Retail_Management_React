@@ -1,0 +1,18 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "jsx": "react-jsx",           // This ensures JSX is handled correctly
+    "strict": true,               // Optional: enables strict type checking
+    "moduleResolution": "node",   // Ensures proper module resolution
+    "esModuleInterop": true       // Helps with compatibility between ES modules and CommonJS
+  },
+}
